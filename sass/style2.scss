@@ -1,0 +1,128 @@
+@import 'header';
+li:nth-child(3) {
+    background-color: $navhover;
+}
+
+.head-pages {
+    @include box;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    background-color: #E74D39;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+input {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px;
+    border: solid 1px lightgray;
+    width: 100%;
+    @include box;
+}
+
+container {
+    button {
+        background-color: white;
+        padding: 10px;
+        margin: 2px;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        cursor: pointer;
+    }
+    .btn-delete {
+        color: white;
+        background-color: $primarycolor;
+    }
+}
+
+.m-table {
+    width: 100%;
+    text-align: Fcenter;
+}
+
+.m-table h3 {
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+.m-table div {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.m-table a {
+    text-decoration: none;
+    color: black;
+    margin: 20px
+}
+
+.latest-drop {
+    display: none;
+    width: 100%;
+    background-color: #EFF3EF;
+}
+
+.main-icon {
+    width: 30px
+}
+
+.latest-users {
+    display: none;
+}
+
+.displayIt {
+    display: none !important;
+}
+
+.lu-point:hover {
+    background-color: #EFF3EF;
+    cursor: pointer;
+}
+.table{
+    display: none;
+}
+
+@media screen and (min-width:720px) {
+    .head-pages {
+        @include box;
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        text-align: left;
+    }
+    .m-table {
+        display: none !important;
+    }
+    .table{
+        display: table;
+        
+    }
+    
+    table {
+        width: 100%;
+        border: 1px solid #EFF3EF;
+        border-collapse: collapse;
+        th {
+            text-align: left;
+            padding: 10px
+        }
+        tr {
+            border-bottom: 1px solid lightgray;
+            td {
+                padding: 10px
+            }
+        }
+        tr:nth-child(odd) {
+        background-color: #EFF3EF;
+    }
+    }
+   
+    
+}

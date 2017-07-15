@@ -1,0 +1,129 @@
+@import "header";
+li:nth-child(2) {
+    background-color: $navhover;
+}
+
+.head-overview {
+    @include box;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    background-color: #E74D39;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.over {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #EFF3EF;
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+    text-align: center;
+    color: #313431;
+}
+
+.over p {
+    font-weight: bold;
+}
+
+.over-count {
+    font-size: 30px;
+}
+
+.latest-users-m {
+    width: 100%;
+    text-align: Fcenter;
+}
+
+.latest-users-m h3 {
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+.latest-users-m div {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.latest-users-m a {
+    text-decoration: none;
+    color: black;
+    margin: 20px
+}
+
+.latest-drop {
+    display: none;
+    width: 100%;
+    background-color: #EFF3EF;
+}
+
+.main-icon {
+    width: 30px
+}
+
+.latest-users {
+    display: none;
+}
+
+.displayIt {
+    display: none !important;
+}
+
+.lu-point:hover {
+    background-color: #EFF3EF;
+    cursor: pointer;
+}
+
+@media screen and (min-width:720px) {
+    .head-overview {
+        @include box;
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        text-align: left;
+    }
+    .latest-users-m {
+        display: none !important;
+    }
+
+    .over {
+        width: 3%;
+        display: table-cell;
+    }
+    .latest-users {
+        display: block;
+        width: 100%;
+    }
+    table {
+        width: 100%;
+        border: 1px solid #EFF3EF;
+        border-collapse: collapse;
+    }
+    .m-table tr {
+        border-bottom: 1px solid lightgrey;
+    }
+    td {
+        padding: 10px
+    }
+    th {
+        padding: 10px
+    }
+    .latest th {
+        text-align: left;
+    }
+    .b-grey {
+        background-color: #EFF3EF;
+    }
+    tr:nth-child(odd) {
+        background-color: #EFF3EF;
+    }
+    
+}

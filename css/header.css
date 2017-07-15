@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: sans-serif; }
+
+.navbar-width,
+.header-width {
+  width: 100%; }
+
+.navbar-width {
+  background-color: #E74D39; }
+
+.header-width {
+  background-color: #333333;
+  margin-top: 0px; }
+
+h1,
+h3 {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em; }
+
+.clearz {
+  clear: both; }
+
+.clear {
+  display: inline;
+  clear: both; }
+
+#main-drop img {
+  position: absolute;
+  right: 1%;
+  width: 30px; }
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 0px; }
+  nav #drop {
+    display: none; }
+  nav h3 {
+    float: left;
+    font-size: 1em; }
+  nav .none {
+    color: white;
+    display: none; }
+  nav a {
+    text-decoration: none;
+    color: white; }
+  nav ul {
+    clear: both;
+    padding-left: 0px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em; }
+    nav ul li {
+      list-style: none;
+      padding: 8px; }
+    nav ul li:not(:first-child):hover {
+      background-color: #B53829; }
+
+.logo {
+  margin: 0 auto;
+  width: 220px;
+  text-align: center; }
+  .logo img {
+    position: relative;
+    float: left;
+    width: 50px; }
+  .logo h1 {
+    color: white;
+    padding-top: 10px; }
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+  header .manage {
+    text-align: left;
+    color: grey;
+    margin: 0 auto;
+    position: relative; }
+  header .header-right button {
+    padding: 10px;
+    margin: 10px; }
+
+main {
+  width: 100%; }
+  main .well {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 97%;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 1px 1px 1px 20px;
+    background-color: #C6CBC6; }
+
+aside {
+  width: 100%;
+  margin: 0 auto; }
+  aside .aside-hd {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #E74D39;
+    color: white;
+    height: 50px;
+    padding: 20px; }
+    aside .aside-hd .s-logo {
+      margin: 0 auto;
+      width: 220px;
+      text-align: center; }
+      aside .aside-hd .s-logo img {
+        position: relative;
+        float: left;
+        width: 50px;
+        margin-top: -12px; }
+      aside .aside-hd .s-logo h3 {
+        font-size: 2em; }
+  aside .aside-d {
+    clear: both;
+    width: 100%;
+    border-bottom: solid lightgrey 1px;
+    text-align: center;
+    padding: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #737373; }
+    aside .aside-d img {
+      width: 25px; }
+    aside .aside-d .count {
+      display: inline;
+      background-color: grey;
+      border-radius: 5px;
+      padding: 2px;
+      color: white;
+      float: right;
+      margin: 0; }
+  aside .aside-d:hover {
+    background-color: #C6CBC6;
+    cursor: pointer; }
+  aside .progress-bars {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #EFF3EF;
+    border-radius: 5px;
+    padding: 10px; }
+    aside .progress-bars h3 {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 15px;
+      color: #313431;
+      text-align: center; }
+    aside .progress-bars .progress {
+      width: 75%;
+      height: 40px;
+      border: solid 1px lightgrey;
+      border-radius: 10px;
+      margin: 0 auto; }
+      aside .progress-bars .progress .progress-bar {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 0%;
+        background-color: #333333;
+        height: 40px;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        padding: 10px; }
+
+@media screen and (min-width: 720px) {
+  #drop {
+    display: inline !important; }
+
+  .none {
+    display: inline !important; }
+
+  .h3-nav {
+    display: none; }
+
+  #main-drop {
+    display: none; }
+
+  nav,
+  header,
+  main {
+    width: 84%;
+    margin: 0 auto; }
+
+  nav ul li {
+    display: inline;
+    float: left; }
+  nav .welcome {
+    padding-top: 10px;
+    float: right; }
+    nav .welcome p {
+      color: white;
+      display: inline; }
+    nav .welcome a {
+      margin-left: 10px; }
+
+  header .logo {
+    float: left; }
+  header .manage {
+    padding: 20px;
+    float: left;
+    display: inline;
+    position: relative; }
+  header .header-right {
+    display: inline;
+    float: right; }
+
+  .well {
+    width: 100%; }
+
+  container {
+    width: 64%;
+    float: right; }
+
+  aside {
+    float: left;
+    width: 34%; }
+    aside .aside-hd {
+      height: 10px;
+      padding: 15px; }
+      aside .aside-hd .s-logo {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: -12px;
+        padding-top: 6px;
+        float: left;
+        width: 150px;
+        height: 30px; }
+        aside .aside-hd .s-logo h3 {
+          font-size: 1.17em; }
+    aside .aside-d {
+      text-align: left; }
+      aside .aside-d .aside-icon {
+        float: left; }
+    aside .progress-bars h3 {
+      text-align: left; }
+    aside .progress-bars .progress {
+      height: 30px; }
+      aside .progress-bars .progress .progress-bar {
+        height: 30px;
+        padding: 7px; } }
+/*--asdaskdklk=========*/
+
+/*# sourceMappingURL=header.css.map */

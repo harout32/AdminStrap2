@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>AdminStrap</title>
+</head>
+
+<body>
+    <div class="navbar-width">
+        <nav>
+
+
+            <h3 class="h3-nav"><a href="#">
+                        AdminStrap
+                    </a></h3>
+            <span id="drop">
+            
+            <ul>
+
+
+                <li class="none">
+                    <h3><a href="#">AdminStrap</a></h3>
+                </li>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="index2.html">Pages</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Users</a></li>
+            </ul>
+            <div class="welcome">
+                <p>welcome </p>
+                <p id="userWelcome">harout</p>
+
+                <a href="#">LogOut</a>
+            </div>
+            </span>
+            <div class="clearz"></div>
+        </nav>
+    </div>
+    <div class="header-width">
+        <header>
+            <a id="main-drop" href="#"><img src="images/drop.png" alt="dropdown-img">
+            </a>
+            <div class="logo">
+                <img src="images/settings.png" alt="settings-img" class="set-img">
+
+
+                <h1>Dashboard</h1>
+            </div>
+            <div class="manage">
+                <h3>Manage Your Site</h3>
+            </div>
+
+            <div class="header-right">
+
+                <button>Create Content</button>
+            </div>
+            <div class="clearz"></div>
+
+
+        </header>
+    </div>
+    <main class="width">
+        <div class="well">
+            <p>Dashboard</p>
+        </div>
+        <aside>
+
+
+            <div class="aside-hd">
+
+                <div class="s-logo">
+                    <img src="images/settings.png" alt="settings-img" class="set-img-d">
+
+
+                    <h3>Dashboard</h3>
+                </div>
+            </div>
+            <div class="aside-d">
+                <img src="images/schedual.png" alt="pages" class="aside-icon">
+                <p class="clear">Pages</p>
+
+                <p class="count pages-count">12</p>
+            </div>
+            <div class="aside-d">
+                <img src="images/pencil.png" alt="posts" class="aside-icon">
+                <p class="clear">Posts</p>
+
+                <p class="count posts-count">33</p>
+            </div>
+            <div class="aside-d">
+                <img src="images/user.png" alt="users" class="aside-icon">
+                <p class="clear">Users</p>
+
+                <p class="count users-count">203</p>
+            </div>
+
+
+            <div class="clearz"></div>
+
+
+
+
+
+
+
+            <div class="progress-bars">
+                <h3>Disk Space Used</h3>
+                <div class="progress">
+                    <div class="progress-bar disk"></div>
+                </div>
+                <h3>Bandwidth Used</h3>
+                <div class="progress">
+                    <div class="progress-bar band"></div>
+                </div>
+            </div>
+
+
+        </aside>
+        <container>
+<header class="head-pages">Pages</header>
+<input id="search" onkeyup="filterSearch()" type="text" placeholder="Filter Pages..">
+<div class="m-table">
+    <h3>Titles</h3>
+    <div class="lu-point">
+        <a class="l-u-1">Home </a><span>&#x25BC;</span>
+    </div>
+    <div class="latest-drop">
+        <b>Published</b>
+        <p class="u-1-e">&#x2714;</p>
+        <b>Created</b>
+        <p class="u-1-d">Dec 12,2016</p>
+        <span class="u-1-d">
+        <button class="btn-edit">Edit</button><button class="btn-delete">Delete</button>
+        </span>
+    </div>
+    <div class="lu-point">
+        <a class="l-u-2">About</a><span>&#x25BC;</span>
+    </div>
+    <div class="latest-drop">
+        <b class="u-2-e">Published</b>
+        <p>&#x2718;</p>
+        <b>Created</b>
+        <p class="u-2-d">Dec 12,2016</p>
+        <span class="u-2-d">
+        <button class="btn-edit">Edit</button><button class="btn-delete">Delete</button>
+        </span>
+    </div>
+    <div class="lu-point">
+        <a class="l-u-3">Services </a><span>&#x25BC;</span>
+    </div>
+    <div class="latest-drop">
+        <b>Published</b>
+        <p class="u-3-e">&#x2714;</p>
+        <b>Created</b>
+        <p class="u-3-d">Dec 12,2016</p>
+        <span class="u-3-d">
+        <button class="btn-edit">Edit</button><button class="btn-delete">Delete</button>
+        </span>
+    </div>
+    <div class="lu-point">
+        <a class="l-u-4">Contacts </a><span>&#x25BC;</span>
+    </div>
+    <div class="latest-drop">
+        <b class="u-4-e">Published</b>
+        <p>&#x2714;</p>
+        <b>Created</b>
+        <p class="u-4-d">Dec 12,2016</p>
+        <span class="u-4-d"><button class="btn-edit">Edit</button><button class="btn-delete">Delete</button>
+        </span>
+    </div>
+
+
+
+
+</div>
+<table id="tt" class="table">
+    <tr>
+        <th>Title</th>
+        <th>Published</th>
+        <th>Created</th>
+        <th></th>
+    </tr>
+    <tr class="home">
+        <td class="l-u-1">Home</td>
+        <td class="u-1-e">&#x2714;</td>
+        <td class="u-1-d">Dec15,2016</td>
+        <td class="u-1-d"><button class="btn-edit">Edit</button><button class="btn-delete">Delete</button></td>
+    </tr>
+    <tr class="about">
+        <td class="l-u-2">About</td>
+        <td class="u-2-e">&#x2714;</td>
+        <td class="u-2-d">Dec15,2016</td>
+        <td class="u-2-d"><button class="btn-edit">Edit</button><button class="btn-delete">Delete</button></td>
+        
+    </tr>
+    <tr class="service">
+        <td class="l-u-3">Services</td>
+        <td class="u-3-e">&#x2718;</td>
+        <td class="u-3-d">Dec15,2016</td>
+        <td class="u-3-d"><button class="btn-edit">Edit</button><button class="btn-delete">Delete</button></td>
+        
+    </tr>
+    <tr class="contact">
+        <td class="l-u-4">Contact</td>
+        <td class="u-4-e">&#x2714;</td>
+        <td class="u-4-d">Dec15,2016</td>
+        <td class="u-4-d"><button class="btn-edit">Edit</button><button class="btn-delete">Delete</button></td>
+        
+    </tr>
+    
+
+</table>
+
+
+
+                        
+                
+        </container>
+    </main>
+    <script src="js/jquery.js"></script>
+    <script src="js/javascript2.js"></script>
+</body>
+        </html>

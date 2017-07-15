@@ -1,0 +1,326 @@
+    $primarycolor:#E74D39;
+    $navhover:#B53829;
+    $darkgrey:#333333;
+    $hovertext:#C6CBC6;
+    $fontgrey:#737373;
+    $con-width:100%;
+    @mixin box () {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    @mixin center() {
+        margin: 0 auto;
+    }
+    
+    @mixin w100() {
+        width: 100%;
+    }
+    
+    @mixin width($how) {
+        width: $how;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0px;
+        font-family: sans-serif;
+    }
+    
+    .navbar-width,
+    .header-width {
+        width: 100%;
+    }
+    
+    .navbar-width {
+        background-color: $primarycolor;
+    }
+    
+    .header-width {
+        background-color: $darkgrey;
+        margin-top: 0px;
+    }
+    
+    h1,
+    h3 {
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+    }
+    
+    .clearz {
+        clear: both;
+    }
+    
+    .clear {
+        display: inline;
+        clear: both;
+    }
+    #main-drop img {
+            position: absolute;
+            right: 1%;
+            width: 30px
+        }
+    nav {
+        width: $con-width;
+        @include center();
+        text-align: center;
+        padding-bottom: 0px;
+        //toggle it in js
+        
+        #drop {
+            display: none;
+        }
+        h3 {
+            float: left;
+            font-size: 1em;
+        }
+        .none {
+            color: white;
+            display: none;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        ul {
+            clear: both;
+            padding-left: 0px;
+            -webkit-margin-before: 0em;
+            -webkit-margin-after: 0em;
+            li {
+                list-style: none;
+                padding: 8px;
+            }
+            li:not(:first-child):hover {
+                background-color: $navhover;
+            }
+        }
+    }
+    
+    .logo {
+        margin: 0 auto;
+        width: 220px;
+        text-align: center;
+        img {
+            position: relative;
+            float: left;
+            width: 50px;
+        }
+        h1 {
+            color: white;
+            padding-top: 10px;
+        }
+    }
+    
+    header {
+        width: $con-width;
+        @include center();
+        text-align: center;
+        .manage {
+            text-align: left;
+            color: grey;
+            margin: 0 auto;
+            position: relative;
+        }
+        .header-right {
+            button {
+                padding: 10px;
+                margin: 10px;
+            }
+        }
+    }
+    
+    main {
+        @include w100();
+        .well {
+            @include box();
+            width: 97%;
+            margin: 10px auto;
+            border-radius: 5px;
+            padding: 1px 1px 1px 20px;
+            background-color: #C6CBC6;
+        }
+    }
+    
+    aside {
+        width: 100%;
+        @include center();
+        .aside-hd {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            background-color: #E74D39;
+            color: white;
+            height: 50px;
+            padding: 20px;
+            .s-logo {
+                margin: 0 auto;
+                width: 220px;
+                text-align: center;
+                img {
+                    position: relative;
+                    float: left;
+                    width: 50px;
+                    margin-top: -12px;
+                }
+                h3 {
+                    font-size: 2em;
+                }
+            }
+        }
+        .aside-d {
+            clear: both;
+            width: 100%;
+            border-bottom: solid lightgrey 1px;
+            text-align: center;
+            padding: 10px;
+            @include box;
+            color: $fontgrey;
+            img {
+                width: 25px
+            }
+            .count {
+                display: inline;
+                background-color: grey;
+                border-radius: 5px;
+                padding: 2px;
+                color: white;
+                float: right;
+                margin: 0;
+            }
+        }
+        .aside-d:hover {
+            background-color: $hovertext;
+            cursor: pointer;
+        }
+        .progress-bars {
+            @include box;
+            width: 100%;
+            background-color: #EFF3EF;
+            border-radius: 5px;
+            padding: 10px;
+            h3 {
+                @include box;
+                margin: 15px;
+                color: #313431;
+                text-align: center;
+            }
+            .progress {
+                width: 75%;
+                height: 40px;
+                border: solid 1px lightgrey;
+                border-radius: 10px;
+                margin: 0 auto;
+                .progress-bar {
+                    @include box;
+                    width: 0%;
+                    background-color: $darkgrey;
+                    height: 40px;
+                    border-radius: 10px;
+                    color: white;
+                    text-align: center;
+                    padding: 10px
+                }
+            }
+        }
+    }
+    
+    @media screen and (min-width:720px) {
+        #drop {
+            display: inline !important;
+        }
+        .none {
+            display: inline !important;
+        }
+        .h3-nav {
+            display: none;
+        }
+        #main-drop {
+            display: none;
+        }
+        nav,
+        header,
+        main {
+            width: 84%;
+            @include center;
+        }
+        nav {
+            ul {
+                li {
+                    display: inline;
+                    float: left;
+                }
+            }
+            .welcome {
+                padding-top: 10px;
+                float: right;
+                p {
+                    color: white;
+                    display: inline;
+                }
+                a {
+                    margin-left: 10px
+                }
+            }
+        }
+        header {
+            .logo {
+                float: left;
+            }
+            .manage {
+                padding: 20px;
+                float: left;
+                display: inline;
+                position: relative;
+            }
+            .header-right {
+                display: inline;
+                float: right;
+            }
+        }
+        .well {
+            width: 100%;
+        }
+        container {
+            width: 64%;
+            float: right;
+        }
+        aside {
+            float: left;
+            width: 34%;
+            .aside-hd {
+                height: 10px;
+                padding: 15px;
+                .s-logo {
+                    @include box;
+                    margin-top: -12px;
+                    padding-top: 6px;
+                    float: left;
+                    width: 150px;
+                    height: 30px;
+                    h3 {
+                        font-size: 1.17em;
+                    }
+                }
+            }
+            .aside-d {
+                text-align: left;
+                .aside-icon {
+                    float: left;
+                }
+            }
+            .progress-bars {
+                h3 {
+                    text-align: left;
+                }
+                .progress {
+                    height: 30px;
+                    .progress-bar {
+                        height: 30px;
+                        padding: 7px;
+                    }
+                }
+            }
+        }
+    }
+    /*--asdaskdklk=========*/
